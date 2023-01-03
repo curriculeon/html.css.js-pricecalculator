@@ -1,13 +1,34 @@
-# Project Title
-
-* **Objective** - To create a product...
-* **Purpose** - To gain familiarity the following features...
+# Grocery Store Price Calculator
 
 
+## Description
 
+* You have been hired by a grocery store to write a program that will determine the price of a customer's purchase.
+* The store has the following pricing rules:
+  * Apples are $0.50 each
+  * Oranges are $0.30 each
+  * Bananas are $0.20 each
+  * All other fruits are $0.10 each
+* In addition to the per-item price, there is a tax of 6% on all purchases.
 
-## Objective
-* Ensure that ...
+* Your task is to write a `PriceCalculator` class with a `calculateTotalPrice(items: string[]) -> number` method that takes in an array of strings representing the items in a customer's cart and returns the total price of the purchase, including tax.
+
+### Example
+
+```js
+const calculator = new PriceCalculator();
+console.log(calculator.calculateTotalPrice(["apple", "orange", "banana"])); // 1.06
+console.log(calculator.calculateTotalPrice(["apple", "apple", "apple", "apple"])); // 2.04
+console.log(calculator.calculateTotalPrice(["apple", "orange", "banana", "mango"])); // 1.46
+```
+
+### Constraints
+* The input array will always contain at least one item.
+* The input array will only contain lowercase strings.
+* **Hints**
+  * Use a switch statement to determine the price of each item.
+  * Use a for loop to iterate over the items in the array and calculate the total price.
+  * Remember to add the tax to the total price.
 
 
 
